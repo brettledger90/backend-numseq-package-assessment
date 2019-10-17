@@ -1,11 +1,3 @@
-def primes(n):
-    prime_list = []
-    for i in range(n):
-        if is_prime(n):
-            prime_list.append(i)
-    return prime_list
-
-             
 def is_prime(n):
     if n==2 or n==3: return True
     if n%2==0 or n<2: return False
@@ -14,3 +6,17 @@ def is_prime(n):
             return False    
 
     return True
+
+
+def primes(n):
+    prime_list = []
+    for i in range(n):
+        if is_prime(i):
+            prime_list.append(i)
+    return prime_list
+
+             
+
+
+
+print(primes(7))
